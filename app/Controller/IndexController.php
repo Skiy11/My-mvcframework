@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
-class IndexController
+use Framework\Controller\AbstractController;
+
+class IndexController extends AbstractController
 {
     public function index()
     {
