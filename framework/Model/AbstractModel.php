@@ -157,4 +157,31 @@ abstract class AbstractModel
         $query = $this->connection->prepare($insert);
         return $query->execute();
     }
+
+    /**
+     * @param array $queryParts
+     * @return bool
+     */
+    public function update(array $queryParts)
+    {
+        $total = count($queryParts);
+        $counter = 0;
+        $update = 'UPDATE ' . $this->getTable() . ' SET ';
+
+        foreach ($queryParts as $key => $value) {
+            $counter++;
+            if ($counter == $total) {
+                $update .= $key . "='$value' ";
+            } else {
+                $update .= $key . "='$value', ";
+            }
+        }
+
+        if (isset($this->queryStorage['where'])) {
+            $update .= $this->queryStorage['where'];
+        }
+
+        $query = $this->connection->prepare($update);
+        return $query->execute();
+    }
 }

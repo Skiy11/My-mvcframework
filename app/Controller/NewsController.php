@@ -17,6 +17,12 @@ class NewsController extends AbstractController
         $news->save();
     }
 
+    public function edit()
+    {
+        $news = new News();
+        $news->where($args = array('id' => 4))->update($args = array('title' => 'UpdatedNews7'));
+    }
+
     public function get()
     {
         $news = new News();
