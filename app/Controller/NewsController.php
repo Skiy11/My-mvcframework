@@ -16,4 +16,13 @@ class NewsController extends AbstractController
         $news->options['text'] = "FirstnewsFirstnewsFirstnews";
         $news->save();
     }
+
+    public function get()
+    {
+        $news = new News();
+        $allNews = $news->where($args = array('id' => 1, 'image' => 'public/news.png'))
+            ->orderBy($args = array('first' => 'id', 'second' => 'created_at'), 'desc')
+            ->setLimit(10)
+            ->read();
+    }
 }
