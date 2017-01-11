@@ -8,6 +8,6 @@ class IndexController extends AbstractController
 {
     public function index()
     {
-        echo 'test5';
+        $this->view->renderView('theme.phtml');
     }
 }
