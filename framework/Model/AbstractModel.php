@@ -184,4 +184,19 @@ abstract class AbstractModel
         $query = $this->connection->prepare($update);
         return $query->execute();
     }
+
+    /**
+     * @return bool
+     */
+    public function delete()
+    {
+        $delete = 'DELETE FROM ' . $this->getTable() . ' ';
+
+        if (isset($this->queryStorage['where'])) {
+            $delete .= $this->queryStorage['where'];
+        }
+
+        $query = $this->connection->prepare($delete);
+        return $query->execute();
+    }
 }

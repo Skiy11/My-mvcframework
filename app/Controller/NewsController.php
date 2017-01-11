@@ -23,6 +23,12 @@ class NewsController extends AbstractController
         $news->where($args = array('id' => 4))->update($args = array('title' => 'UpdatedNews7'));
     }
 
+    public function delete()
+    {
+        $news = new News();
+        $news->where($args = array('id' => 4))->update($args = array('deleted' => 1));
+    }
+
     public function get()
     {
         $news = new News();
