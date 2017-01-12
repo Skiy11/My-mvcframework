@@ -1,0 +1,29 @@
+footer {
+    @include container-fixed;
+
+    padding: 0;
+
+    .footer-info {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(12);
+
+        background-color: #4d636f;
+        padding: 15px;
+        color: #fff;
+    }
+    .copyright {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(12);
+
+        padding: 15px;
+        color: #fff;
+        background-color: #303e45;
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
