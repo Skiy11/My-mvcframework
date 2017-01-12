@@ -36,14 +36,14 @@
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/badges";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
-//@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/media";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/panels";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/wells";
-//@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/close";
 
 // Components w/ JavaScript
 //@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap/modals";
@@ -62,3 +62,4 @@
 @import "components/content";
 @import "components/right-sidebar";
 @import "components/footer";
+@import "components/blocks";
