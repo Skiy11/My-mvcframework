@@ -1,0 +1,75 @@
+article {
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(7);
+
+    .post-form {
+        input {
+            width: 100%;
+            border-radius: 0;
+        }
+        .btn-service {
+            margin-top: 15px;
+            background-color: #607d8b;
+            border-radius: 0;
+            border: 0;
+        }
+        .btn-service:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+
+    .post {
+        height: 100%;
+        .author-avatar {
+            @include make-xs-column(3);
+            @include make-sm-column(2);
+            @include make-md-column(2);
+            img {
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .author-name {
+            @include make-xs-column(9);
+            @include make-sm-column(7);
+            @include make-md-column(8);
+        }
+        .post-time {
+            @include make-xs-column(12);
+            @include make-sm-column(3);
+            @include make-md-column(2);
+            padding-top: 25px;
+        }
+
+        .title-post {
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(12);
+        }
+        .description p {
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(12);
+            text-align: justify;
+        }
+        .post-image {
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(12);
+        }
+        .post-buttons {
+            padding-left: 15px;
+            .btn-service {
+                margin-top: 15px;
+                background-color: #607d8b;
+                border-radius: 0;
+                border: 0;
+            }
+            .btn-service:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+    }
+}

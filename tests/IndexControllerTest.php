@@ -5,10 +5,8 @@ use Framework\Bootstrap\Router;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DomCrawler\Crawler;
 
-
 class IndexControllerTest extends TestCase
 {
-
 
     public function testIndexActionFunctional()
     {
@@ -18,7 +16,6 @@ class IndexControllerTest extends TestCase
         $result = ob_get_clean();
 
         $crawler = new Crawler($result);
-
 
         $this->assertEquals('Home', $crawler->filter('title')->text());
     }

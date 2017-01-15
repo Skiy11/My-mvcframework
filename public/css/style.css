@@ -2611,6 +2611,42 @@ a.label:hover, a.label:focus {
   .label-danger[href]:hover, .label-danger[href]:focus {
     background-color: #c9302c; }
 
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px; }
+  .badge:empty {
+    display: none; }
+  .btn .badge {
+    position: relative;
+    top: -1px; }
+  .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .btn .badge {
+    top: 0;
+    padding: 1px 5px; }
+  .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+    color: #337ab7;
+    background-color: #fff; }
+  .list-group-item > .badge {
+    float: right; }
+  .list-group-item > .badge + .badge {
+    margin-right: 5px; }
+  .nav-pills > li > a > .badge {
+    margin-left: 3px; }
+
+a.badge:hover, a.badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
+
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -3062,6 +3098,195 @@ aside.left-sidebar {
     border: 1px solid #ccc;
     margin-top: 20px; }
 
+article {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    article {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    article {
+      float: left;
+      width: 58.33333%; } }
+  article .post-form input {
+    width: 100%;
+    border-radius: 0; }
+  article .post-form .btn-service {
+    margin-top: 15px;
+    background-color: #607d8b;
+    border-radius: 0;
+    border: 0; }
+  article .post-form .btn-service:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  article .post {
+    height: 100%; }
+    article .post .author-avatar {
+      position: relative;
+      float: left;
+      width: 25%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        article .post .author-avatar {
+          float: left;
+          width: 16.66667%; } }
+      @media (min-width: 992px) {
+        article .post .author-avatar {
+          float: left;
+          width: 16.66667%; } }
+      article .post .author-avatar img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px; }
+    article .post .author-name {
+      position: relative;
+      float: left;
+      width: 75%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        article .post .author-name {
+          float: left;
+          width: 58.33333%; } }
+      @media (min-width: 992px) {
+        article .post .author-name {
+          float: left;
+          width: 66.66667%; } }
+    article .post .post-time {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 25px; }
+      @media (min-width: 768px) {
+        article .post .post-time {
+          float: left;
+          width: 25%; } }
+      @media (min-width: 992px) {
+        article .post .post-time {
+          float: left;
+          width: 16.66667%; } }
+    article .post .title-post {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        article .post .title-post {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        article .post .title-post {
+          float: left;
+          width: 100%; } }
+    article .post .description p {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: justify; }
+      @media (min-width: 768px) {
+        article .post .description p {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        article .post .description p {
+          float: left;
+          width: 100%; } }
+    article .post .post-image {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        article .post .post-image {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        article .post .post-image {
+          float: left;
+          width: 100%; } }
+    article .post .post-buttons {
+      padding-left: 15px; }
+      article .post .post-buttons .btn-service {
+        margin-top: 15px;
+        background-color: #607d8b;
+        border-radius: 0;
+        border: 0; }
+      article .post .post-buttons .btn-service:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
 aside.right-sidebar {
   position: relative;
   float: left;
@@ -3101,7 +3326,9 @@ aside.right-sidebar {
     opacity: 0.6;
     margin: 0;
     border: 0;
-    width: 100%; }
+    width: 100%;
+    background-color: #dfe5e8;
+    color: #000; }
   aside.right-sidebar .upcoming-events .btn-information:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   aside.right-sidebar .upcoming-events .btn-group-size {
@@ -3175,7 +3402,8 @@ footer {
     padding-right: 15px;
     background-color: #4d636f;
     padding: 15px;
-    color: #fff; }
+    color: #fff;
+    margin-top: 15px; }
     @media (min-width: 768px) {
       footer .footer-info {
         float: left;
