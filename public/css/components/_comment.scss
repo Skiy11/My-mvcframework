@@ -3,16 +3,6 @@
     @include make-sm-column(12);
     @include make-md-column(12);
     margin-top: 20px;
-
-    .btn-service {
-        margin-top: 15px;
-        background-color: #607d8b;
-        border-radius: 0;
-        border: 0;
-    }
-    .btn-service:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 }
 
 .comments {
@@ -25,7 +15,6 @@
         @include make-xs-column(2);
         @include make-sm-column(2);
         @include make-md-column(2);
-        float: left;
         text-align: center;
         img {
             width: 50px;
@@ -38,19 +27,16 @@
         @include make-xs-column(10);
         @include make-sm-column(10);
         @include make-md-column(10);
-        float: left;
 
         .username {
             @include make-xs-column(12);
             @include make-sm-column(10);
             @include make-md-column(9);
-            float: left;
         }
         .comment-time {
             @include make-xs-column(12);
             @include make-sm-column(2);
             @include make-md-column(3);
-            float: left;
             text-align: right;
         }
         .text-comment {

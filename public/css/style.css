@@ -3134,13 +3134,6 @@ article {
   article .post-form input {
     width: 100%;
     border-radius: 0; }
-  article .post-form .btn-service {
-    margin-top: 15px;
-    background-color: #607d8b;
-    border-radius: 0;
-    border: 0; }
-  article .post-form .btn-service:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   article .post {
     height: 100%; }
     article .post .author-avatar {
@@ -3311,13 +3304,6 @@ article {
         article .post .post-buttons {
           float: left;
           width: 100%; } }
-      article .post .post-buttons .btn-service {
-        margin-top: 15px;
-        background-color: #607d8b;
-        border-radius: 0;
-        border: 0; }
-      article .post .post-buttons .btn-service:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 aside.right-sidebar {
   position: relative;
@@ -3353,18 +3339,6 @@ aside.right-sidebar {
     text-align: center; }
     aside.right-sidebar .upcoming-events .friend-avatar img {
       vertical-align: middle; }
-  aside.right-sidebar .upcoming-events .btn-information {
-    border-radius: 0;
-    opacity: 0.6;
-    margin: 0;
-    border: 0;
-    width: 100%;
-    background-color: #dfe5e8;
-    color: #000; }
-  aside.right-sidebar .upcoming-events .btn-information:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  aside.right-sidebar .upcoming-events .btn-group-size {
-    width: 100%; }
   aside.right-sidebar .friend-request h4, aside.right-sidebar .friend-request h5 {
     text-align: center; }
   aside.right-sidebar .friend-request .friend-avatar {
@@ -3373,27 +3347,6 @@ aside.right-sidebar {
       height: 86px;
       width: 86px;
       vertical-align: middle; }
-  aside.right-sidebar .friend-request .btn-group-size {
-    width: 100%;
-    margin-top: 15px; }
-  aside.right-sidebar .friend-request .btn-refuse {
-    border-radius: 0;
-    opacity: 0.6;
-    background-color: #f44336;
-    margin: 0;
-    border: 0;
-    width: 50%; }
-  aside.right-sidebar .friend-request .btn-success {
-    border-radius: 0;
-    opacity: 0.6;
-    background-color: #4caf50;
-    margin: 0;
-    border: 0;
-    width: 50%; }
-  aside.right-sidebar .friend-request .btn-refuse:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  aside.right-sidebar .friend-request .btn-success:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   aside.right-sidebar .ads {
     color: #000;
     text-align: center; }
@@ -3532,13 +3485,6 @@ footer {
     .write-comment {
       float: left;
       width: 100%; } }
-  .write-comment .btn-service {
-    margin-top: 15px;
-    background-color: #607d8b;
-    border-radius: 0;
-    border: 0; }
-  .write-comment .btn-service:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .comments {
   position: relative;
@@ -3579,7 +3525,6 @@ footer {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    float: left;
     text-align: center; }
     @media (min-width: 768px) {
       .comments .user-avatar {
@@ -3608,8 +3553,7 @@ footer {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px;
-    float: left; }
+    padding-right: 15px; }
     @media (min-width: 768px) {
       .comments .comment-info {
         float: left;
@@ -3632,8 +3576,7 @@ footer {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
-      padding-right: 15px;
-      float: left; }
+      padding-right: 15px; }
       @media (min-width: 768px) {
         .comments .comment-info .username {
           float: left;
@@ -3657,7 +3600,6 @@ footer {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
-      float: left;
       text-align: right; }
       @media (min-width: 768px) {
         .comments .comment-info .comment-time {
@@ -3692,5 +3634,55 @@ footer {
         .comments .comment-info .text-comment {
           float: left;
           width: 100%; } }
+
+.btn-service {
+  margin-top: 15px;
+  background-color: #607d8b;
+  border-radius: 0;
+  border: 0; }
+
+.btn-service:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #607d8b; }
+
+.btn-group-size {
+  width: 100%;
+  margin-top: 15px; }
+
+.btn-refuse {
+  border-radius: 0;
+  opacity: 0.6;
+  background-color: #f44336;
+  margin: 0;
+  border: 0;
+  width: 50%; }
+
+.btn-success {
+  border-radius: 0;
+  opacity: 0.6;
+  background-color: #4caf50;
+  margin: 0;
+  border: 0;
+  width: 50%; }
+
+.btn-refuse:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.btn-success:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.btn-information {
+  border-radius: 0;
+  opacity: 0.6;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  background-color: #dfe5e8;
+  color: #000; }
+
+.btn-information:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #dfe5e8;
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */

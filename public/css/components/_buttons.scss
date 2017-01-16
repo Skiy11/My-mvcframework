@@ -1,0 +1,50 @@
+.btn-service {
+    margin-top: 15px;
+    background-color: #607d8b;
+    border-radius: 0;
+    border: 0;
+}
+.btn-service:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #607d8b;
+}
+.btn-group-size {
+    width: 100%;
+    margin-top: 15px;
+}
+.btn-refuse {
+    border-radius: 0;
+    opacity: 0.6;
+    background-color: #f44336;
+    margin: 0;
+    border: 0;
+    width: 50%;
+}
+.btn-success {
+    border-radius: 0;
+    opacity: 0.6;
+    background-color: #4caf50;
+    margin: 0;
+    border: 0;
+    width: 50%;
+}
+.btn-refuse:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-success:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-information {
+    border-radius: 0;
+    opacity: 0.6;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    background-color: #dfe5e8;
+    color: #000;
+}
+.btn-information:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #dfe5e8;
+    color: #000;
+}
