@@ -3624,6 +3624,9 @@ footer {
         .comments .comment-info .comment-time {
           float: left;
           width: 25%; } }
+    @media (max-width: 480px) {
+      .comments .comment-info .comment-time {
+        text-align: left; } }
     .comments .comment-info .text-comment {
       position: relative;
       float: left;
