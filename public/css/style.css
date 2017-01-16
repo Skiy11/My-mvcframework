@@ -3278,7 +3278,28 @@ article {
           float: left;
           width: 100%; } }
     article .post .post-buttons {
-      padding-left: 15px; }
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        article .post .post-buttons {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        article .post .post-buttons {
+          float: left;
+          width: 100%; } }
       article .post .post-buttons .btn-service {
         margin-top: 15px;
         background-color: #607d8b;
@@ -3447,5 +3468,205 @@ footer {
   border-radius: 4px;
   padding: 10px 20px;
   margin-top: 20px; }
+
+.block-article {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .block-article {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .block-article {
+      float: left;
+      width: 100%; } }
+
+.write-comment {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .write-comment {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .write-comment {
+      float: left;
+      width: 100%; } }
+  .write-comment .btn-service {
+    margin-top: 15px;
+    background-color: #607d8b;
+    border-radius: 0;
+    border: 0; }
+  .write-comment .btn-service:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.comments {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .comments {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .comments {
+      float: left;
+      width: 100%; } }
+  .comments .user-avatar {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .comments .user-avatar {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .comments .user-avatar {
+        float: left;
+        width: 16.66667%; } }
+  .comments .comment-info {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .comments .comment-info {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .comments .comment-info {
+        float: left;
+        width: 83.33333%; } }
+    .comments .comment-info .username {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .comments .comment-info .username {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .comments .comment-info .username {
+          float: left;
+          width: 75%; } }
+    .comments .comment-info .comment-time {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .comments .comment-info .comment-time {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .comments .comment-info .comment-time {
+          float: left;
+          width: 25%; } }
+    .comments .comment-info .text-comment {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .comments .comment-info .text-comment {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .comments .comment-info .text-comment {
+          float: left;
+          width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                         <li class="dropdown">
                             <a href="#"
                                class="dropdown-toggle"
@@ -36,6 +36,7 @@
                                aria-haspopup="true"
                                aria-expanded="false">
                                 <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="badges">5</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
@@ -146,8 +147,8 @@
                 </button>
             </div>
 
-            <div class="post block">
-                <div class="row">
+            <div class="post block-article row">
+
                     <div class="author-avatar">
                         <img src="/img/ava.jpg">
                     </div>
@@ -176,8 +177,35 @@
                             <i class="fa fa-comment" aria-hidden="true"></i> Comment
                         </button>
                     </div>
+
+                    <div class="write-comment">
+                        <h4>Write your comment:</h4>
+
+                        <textarea class="form-control" rows="3"></textarea>
+
+                        <button type="button" class="btn btn-info btn-service">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment
+                        </button>
+                    </div>
+
+                    <div class="comments">
+                        <div class="row">
+                            <div class="user-avatar"><img src="/img/img-post.jpg"></div>
+                            <div class="comment-info row">
+
+                                    <div class="username">John Doe</div>
+                                    <div class="comment-time"> 16 min</div>
+                                    <div class="text-comment">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+
+                            </div>
+                        </div>
+
                 </div>
-            </div>
+
         </article>
         <aside class="right-sidebar">
             <div class="upcoming-events block">

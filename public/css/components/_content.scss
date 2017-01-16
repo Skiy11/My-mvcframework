@@ -60,7 +60,9 @@ article {
             @include make-md-column(12);
         }
         .post-buttons {
-            padding-left: 15px;
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(12);
             .btn-service {
                 margin-top: 15px;
                 background-color: #607d8b;
