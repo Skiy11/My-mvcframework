@@ -23,11 +23,22 @@ header {
         }
         .navbar-nav {
             li {
+                position: relative;
                 a {
                     color: #fff;
                     font-size: 18px;
                     display: block;
                     padding: 15px 24px;
+                }
+
+                .badges {
+                    position: absolute;
+                    padding: 0 6px;
+                    border-radius: 50%;
+                    background-color: limegreen;
+                    left: 45px;
+                    top: 10px;
+                    font-size: 12px;
                 }
 
                 .dropdown-menu {
