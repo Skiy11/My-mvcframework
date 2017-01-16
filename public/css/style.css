@@ -3556,7 +3556,7 @@ footer {
   .comments .user-avatar {
     position: relative;
     float: left;
-    width: 100%;
+    width: 16.66667%;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
@@ -3567,19 +3567,26 @@ footer {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    float: left;
+    text-align: center; }
     @media (min-width: 768px) {
       .comments .user-avatar {
         float: left;
-        width: 100%; } }
+        width: 16.66667%; } }
     @media (min-width: 992px) {
       .comments .user-avatar {
         float: left;
         width: 16.66667%; } }
+    .comments .user-avatar img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      vertical-align: middle; }
   .comments .comment-info {
     position: relative;
     float: left;
-    width: 100%;
+    width: 83.33333%;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
@@ -3590,11 +3597,12 @@ footer {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    float: left; }
     @media (min-width: 768px) {
       .comments .comment-info {
         float: left;
-        width: 100%; } }
+        width: 83.33333%; } }
     @media (min-width: 992px) {
       .comments .comment-info {
         float: left;
@@ -3613,11 +3621,12 @@ footer {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      float: left; }
       @media (min-width: 768px) {
         .comments .comment-info .username {
           float: left;
-          width: 100%; } }
+          width: 83.33333%; } }
       @media (min-width: 992px) {
         .comments .comment-info .username {
           float: left;
@@ -3636,11 +3645,13 @@ footer {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      float: left;
+      text-align: right; }
       @media (min-width: 768px) {
         .comments .comment-info .comment-time {
           float: left;
-          width: 100%; } }
+          width: 16.66667%; } }
       @media (min-width: 992px) {
         .comments .comment-info .comment-time {
           float: left;
@@ -3659,7 +3670,9 @@ footer {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      text-align: justify;
+      padding-top: 25px; }
       @media (min-width: 768px) {
         .comments .comment-info .text-comment {
           float: left;
