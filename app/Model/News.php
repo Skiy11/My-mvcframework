@@ -11,7 +11,6 @@ class News extends AbstractModel
     public $options = [
         'image' => '',
         'title' => '',
-        'description' => '',
         'text' => ''
     ];
 
