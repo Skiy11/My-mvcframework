@@ -19,6 +19,8 @@ class NewsController extends AbstractController
         $news->options['title'] = $_POST['title-news'];
         $news->options['text'] = $_POST['text-news'];
         $news->save();
+
+        echo json_encode($news->options);
     }
 
     public function edit()
@@ -36,9 +38,13 @@ class NewsController extends AbstractController
     public function get()
     {
         $news = new News();
-        $allNews = $news->where($args = array('id' => 1, 'image' => 'public/news.png'))
-            ->orderBy($args = array('first' => 'id', 'second' => 'created_at'), 'desc')
-            ->setLimit(10)
-            ->read();
+
+        if (isset($_POST['startFrom'])) {
+            $allNews = $news->setLimit(4, $_POST['startFrom'])->read();
+        } else {
+            $allNews = $news->setLimit(4)->read();
+        }
+
+        echo json_encode($allNews);
     }
 }
