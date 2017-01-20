@@ -65,7 +65,7 @@ abstract class AbstractModel
      * @param string $sort
      * @return $this
      */
-    public function orderBy(array $queryParts, $sort = 'DESC')
+    public function orderBy(array $queryParts, $sort = 'ASC')
     {
         $orderBy = 'ORDER BY ';
         $total = count($queryParts);
