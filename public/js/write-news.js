@@ -1,24 +1,19 @@
 (function ($) {
     $(document).ready(function () {
-        $(".write-news-form input").click(function(){
+        var $postForm = $('#write-news-form');
+
+        $postForm.on('click', 'input', function(){
             $('.text-news').slideDown();
             $('.btn-hide').slideDown();
         });
 
         $(document).click( function(event){
-            if( $(event.target).closest(".post-form").length )
+            if ( $(event.target).closest(".post-form").length ) {
                 return;
+            }
+
             $('.text-news').slideUp();
             $('.btn-hide').slideUp();
-            event.stopPropagation();
-        });
-
-        $.ajax({
-            type : 'POST',
-            url : 'add-news',
-            data : $('write-news-form').serialize(),
-            success : function() {
-            }
         });
     });
 })(jQuery);

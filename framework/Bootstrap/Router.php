@@ -18,6 +18,7 @@ class Router
             $uri = trim($_SERVER['REQUEST_URI'], '/');
         }
 
+        $output = '';
         foreach ($this->routes as $pattern => $route) {
             if (preg_match("#$pattern#", $uri)){
                 $internalRoute = preg_replace("#$pattern#", $route, $uri);
@@ -31,9 +32,14 @@ class Router
                 }
 
                 $controller = new $controllerClass();
+                ob_start();
                 call_user_func_array(array($controller, $action), $parameters);
+                $output = ob_get_clean();
+                break;
             }
         }
+
+        echo $output;
     }
 
     function error404()
