@@ -22,11 +22,7 @@
                 url: 'add-news',
                 data: $(this).serialize(),
                 success: function (result) {
-                    var data = JSON.parse(result);
-
-                    var onePost = getPostTemplate(data);
-
-                    $('article').append(onePost);
+                    getAllNews();
                 },
                 error: function() {
                     alert('Something went wrong. Sorry :\'(');
@@ -36,23 +32,28 @@
             return false;
         });
 
-        $.ajax({
-            type: 'POST',
-            url: 'get-news',
-            data: $(this).serialize(),
-            success: function (result) {
-                var data = JSON.parse(result);
+        getAllNews();
 
-                data.forEach(function(item, i, data) {
-                    var allPost = getPostTemplate(item);
-                    $('article').append(allPost);
-                });
+        function getAllNews()
+        {
+            $.ajax({
+                type: 'POST',
+                url: 'get-news',
+                data: $(this).serialize(),
+                success: function (result) {
+                    var data = JSON.parse(result);
 
-            },
-            error: function() {
-                alert('Something went wrong. Sorry :\'(');
-            }
-        });
+                    data.forEach(function(item, i, data) {
+                        var allPost = getPostTemplate(item);
+                        $('article').append(allPost);
+                    });
+
+                },
+                error: function() {
+                    alert('Something went wrong. Sorry :\'(');
+                }
+            });
+        }
 
         function getPostTemplate(data) {
             return '<div class="post block-article row">'

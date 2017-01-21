@@ -19,7 +19,7 @@ $(document).ready(function(){
 
                 if (data.length > 0) {
 
-                    data.forEach(function(item, i, data) {
+                    $.each(data, function(i, item) {
                         var allPost = getPostTemplate(item);
                         $('article').append(allPost);
                     });
