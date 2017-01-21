@@ -22,7 +22,7 @@
                 url: 'add-news',
                 data: $(this).serialize(),
                 success: function (result) {
-                    getAllNews();
+                    location.reload();
                 },
                 error: function() {
                     alert('Something went wrong. Sorry :\'(');
