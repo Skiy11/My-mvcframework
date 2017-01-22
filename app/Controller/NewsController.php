@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\News;
+use App\Model\Comments;
 use Framework\Controller\AbstractController;
 
 class NewsController extends AbstractController
@@ -47,5 +48,14 @@ class NewsController extends AbstractController
         }
 
         echo json_encode($allNews);
+    }
+
+    public function addComment()
+    {
+        $comments = new Comments();
+        $comments->options['text'] = $_POST['text-comments'];
+        $comments->save();
+
+        echo json_encode($comments->options);
     }
 }

@@ -6,7 +6,7 @@ return array(
     'news/get-news' => 'news/get/$1',
     'news/edit-news' => 'news/edit/$1',
     'comments/delete-comments' => 'comments/delete/$1',
-    'comments/add-comments' => 'comments/add/$1',
+    'news/add-comments' => 'news/addComments/$1',
     'comments/get-comments' => 'comments/get/$1',
     'comments/edit-comments' => 'comments/edit/$1',
     'index/([-_a-z0-9]+)' => 'index/index/$1',

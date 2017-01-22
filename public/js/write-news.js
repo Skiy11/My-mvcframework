@@ -76,9 +76,9 @@
                 + '<button type="button" class="btn btn-info btn-service btn-comment" data-id="'+data.id+'"> <i class="fa fa-comment" aria-hidden="true"></i> Comment </button>'
                 + '<button type="button" class="btn btn-info btn-service btn-delete" data-id="'+data.id+'" > <i class="fa fa-trash" aria-hidden="true"></i> Delete </button> </div>'
                 + '<div class="write-comment unique-form-'+data.id+'"> <h4>Write your comment:</h4>'
-                + '<form id="write-comment-form" action="" method="post">'
-                + '<textarea class="form-control" rows="3" name="text-comment"></textarea>'
-                + '<button type="button" class="btn btn-info btn-service" > <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
+                + '<form id="write-comments-form" action="" method="post">'
+                + '<textarea class="form-control" rows="3" name="text-comments"></textarea>'
+                + '<button type="submit" class="btn btn-info btn-service" > <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
                 + '</div>';
         }
     });
