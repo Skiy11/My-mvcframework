@@ -31,8 +31,9 @@ class NewsController extends AbstractController
 
     public function delete()
     {
+        $idDeletedNews = json_decode($_POST['id']);
         $news = new News();
-        $news->where($args = array('id' => 4))->update($args = array('deleted' => 1));
+        $news->where($args = array('id' => $idDeletedNews))->update($args = array('deleted' => 1));
     }
 
     public function get()
@@ -40,9 +41,9 @@ class NewsController extends AbstractController
         $news = new News();
 
         if (isset($_POST['startFrom'])) {
-            $allNews = $news->orderBy($args = array('first' => 'created_at'))->setLimit($_POST['startFrom'], 4)->read();
+            $allNews = $news->where($args = array('deleted' => 0))->orderBy($args = array('first' => 'created_at'))->setLimit($_POST['startFrom'], 4)->read();
         } else {
-            $allNews = $news->orderBy($args = array('first' => 'created_at'))->setLimit(4)->read();
+            $allNews = $news->where($args = array('deleted' => 0))->orderBy($args = array('first' => 'created_at'))->setLimit(4)->read();
         }
 
         echo json_encode($allNews);
