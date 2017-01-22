@@ -3,6 +3,7 @@
     @include make-sm-column(12);
     @include make-md-column(12);
     margin-top: 20px;
+    display: none;
 }
 
 .comments {

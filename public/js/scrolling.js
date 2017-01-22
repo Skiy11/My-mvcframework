@@ -40,8 +40,11 @@ $(document).ready(function(){
             + '<div class="description"> <p>'+data.text+'</p> </div>'
             + '<div class="post-image"> <img src="'+data.image+'" class="img-responsive"> </div>'
             + '<div class="post-buttons"> <button type="button" class="btn btn-info btn-service"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> Like </button>'
-            + '<button type="button" class="btn btn-info btn-service"> <i class="fa fa-comment" aria-hidden="true"></i> Comment </button> '
+            + '<button type="button" class="btn btn-info btn-service btn-comment" data-id="'+data.id+'"> <i class="fa fa-comment" aria-hidden="true"></i> Comment </button> '
             + '<button type="button" class="btn btn-info btn-service btn-delete" data-id="'+data.id+'" > <i class="fa fa-trash" aria-hidden="true"></i> Delete </button></div>'
+            + '<div class="write-comment"> <h4>Write your comment:</h4>'
+            + '<textarea class="form-control" rows="3" name="text-comment"></textarea>'
+            + '<button type="button" class="btn btn-info btn-service"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </div>'
             + '</div>';
     }
 });

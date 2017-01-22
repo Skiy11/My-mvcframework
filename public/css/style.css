@@ -3497,7 +3497,8 @@ footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: none; }
   @media (min-width: 768px) {
     .write-comment {
       float: left;
