@@ -76,24 +76,6 @@
             });
         });
 
-        /*$.ajax({
-            type: 'POST',
-            url: 'get-news',
-            data: $(this).serialize(),
-            success: function (result) {
-                var data = JSON.parse(result);
-
-                data.forEach(function (item, i, data) {
-                    var allPost = getPostTemplate(item);
-                    $('article').append(allPost);
-                });
-
-            },
-            error: function () {
-                alert('Something went wrong. Sorry :\'(');
-            }
-        });*/
-
         function getCommentTemplate(data) {
             return  + '<div class="row">'
                     + '<div class="user-avatar"><img src="/img/ava.jpg"></div>'

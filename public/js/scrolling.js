@@ -45,7 +45,7 @@ $(document).ready(function(){
             + '<div class="write-comment"> <h4>Write your comment:</h4>'
             + '<form id="write-comments-form" action="" method="post">'
             + '<textarea class="form-control" rows="3" name="text-comments"></textarea>'
-            + '<button type="button" class="btn btn-info btn-service"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
+            + '<button type="button" class="btn btn-info btn-service btn-add-comment"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
             + '</div>';
     }
 });

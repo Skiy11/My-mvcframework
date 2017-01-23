@@ -50,12 +50,21 @@ class NewsController extends AbstractController
         echo json_encode($allNews);
     }
 
-    public function addComment()
+    public function addComments()
     {
         $comments = new Comments();
-        $comments->options['text'] = $_POST['text-comments'];
+        $comments->options['text'] = $_POST['dataForm'];
+        $comments->options['news_id'] = $_POST['id'];
         $comments->save();
 
         echo json_encode($comments->options);
+    }
+
+    public function getComments()
+    {
+        $relationCommentNews = json_decode($_POST['id']);
+        $comments = new Comments();
+        $allComments = $comments->where($args = array('news_id' => $relationCommentNews))->orderBy($args = array('first' => 'created_at'))->setLimit(4)->read();
+        echo json_encode($allComments);
     }
 }

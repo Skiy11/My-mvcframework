@@ -10,6 +10,7 @@ class Comments extends AbstractModel
 
     public $options = [
         'text' => '',
+        'news_id' => ''
     ];
 
     /**
