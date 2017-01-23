@@ -3497,7 +3497,8 @@ footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: none; }
   @media (min-width: 768px) {
     .write-comment {
       float: left;
@@ -3708,5 +3709,8 @@ footer {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #dfe5e8;
   color: #000; }
+
+.btn-delete {
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\News;
+use App\Model\Comments;
 use Framework\Controller\AbstractController;
 
 class NewsController extends AbstractController
@@ -15,7 +16,7 @@ class NewsController extends AbstractController
     public function add()
     {
         $news = new News();
-        $news->options['image'] = "public/firstnews.png";
+        $news->options['image'] = "/img/img-post.jpg";
         $news->options['title'] = $_POST['title-news'];
         $news->options['text'] = $_POST['text-news'];
         $news->save();
@@ -31,8 +32,9 @@ class NewsController extends AbstractController
 
     public function delete()
     {
+        $idDeletedNews = json_decode($_POST['id']);
         $news = new News();
-        $news->where($args = array('id' => 4))->update($args = array('deleted' => 1));
+        $news->where($args = array('id' => $idDeletedNews))->update($args = array('deleted' => 1));
     }
 
     public function get()
@@ -40,11 +42,20 @@ class NewsController extends AbstractController
         $news = new News();
 
         if (isset($_POST['startFrom'])) {
-            $allNews = $news->setLimit(4, $_POST['startFrom'])->read();
+            $allNews = $news->where($args = array('deleted' => 0))->orderBy($args = array('first' => 'created_at'))->setLimit($_POST['startFrom'], 4)->read();
         } else {
-            $allNews = $news->setLimit(4)->read();
+            $allNews = $news->where($args = array('deleted' => 0))->orderBy($args = array('first' => 'created_at'))->setLimit(4)->read();
         }
 
         echo json_encode($allNews);
+    }
+
+    public function addComment()
+    {
+        $comments = new Comments();
+        $comments->options['text'] = $_POST['text-comments'];
+        $comments->save();
+
+        echo json_encode($comments->options);
     }
 }
