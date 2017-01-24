@@ -3222,7 +3222,7 @@ article {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
-      padding-top: 25px;
+      padding-top: 15px;
       text-align: right; }
       @media (min-width: 768px) {
         article .post .post-time {
@@ -3323,6 +3323,29 @@ article {
           width: 100%; } }
       @media (min-width: 992px) {
         article .post .post-buttons {
+          float: left;
+          width: 100%; } }
+    article .post .show-button {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        article .post .show-button {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        article .post .show-button {
           float: left;
           width: 100%; } }
 
@@ -3575,7 +3598,8 @@ footer {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    margin-bottom: 20px; }
     @media (min-width: 768px) {
       .comments .comment-info {
         float: left;
@@ -3606,8 +3630,37 @@ footer {
       @media (min-width: 992px) {
         .comments .comment-info .username {
           float: left;
-          width: 75%; } }
+          width: 66.66667%; } }
     .comments .comment-info .comment-time {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: right;
+      font-size: 8px;
+      padding-top: 6px; }
+      @media (min-width: 768px) {
+        .comments .comment-info .comment-time {
+          float: left;
+          width: 16.66667%; } }
+      @media (min-width: 992px) {
+        .comments .comment-info .comment-time {
+          float: left;
+          width: 25%; } }
+    @media (max-width: 480px) {
+      .comments .comment-info .comment-time {
+        text-align: left; } }
+    .comments .comment-info .comment-delete {
       position: relative;
       float: left;
       width: 100%;
@@ -3624,16 +3677,15 @@ footer {
       padding-right: 15px;
       text-align: right; }
       @media (min-width: 768px) {
-        .comments .comment-info .comment-time {
+        .comments .comment-info .comment-delete {
           float: left;
           width: 16.66667%; } }
       @media (min-width: 992px) {
-        .comments .comment-info .comment-time {
+        .comments .comment-info .comment-delete {
           float: left;
-          width: 25%; } }
-    @media (max-width: 480px) {
-      .comments .comment-info .comment-time {
-        text-align: left; } }
+          width: 8.33333%; } }
+    .comments .comment-info .comment-delete:hover {
+      color: red; }
     .comments .comment-info .text-comment {
       position: relative;
       float: left;
@@ -3712,5 +3764,32 @@ footer {
 
 .btn-delete {
   float: right; }
+
+.btn-show {
+  margin-top: 15px;
+  border-radius: 0;
+  border: 0;
+  width: 100%; }
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  top: 8px;
+  margin-right: 20px; }
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

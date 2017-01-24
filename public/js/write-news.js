@@ -79,7 +79,7 @@
                 + '<form id="write-comments-form"  form-id = "'+data.id+'" action="" method="post">'
                 + '<textarea class="form-control" rows="3" name="text-comments"></textarea>'
                 + '<button type="submit" class="btn btn-info btn-service btn-add-comment" data-id="'+data.id+'" > <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
-                + '<button type="button" class="btn btn-info btn-show" data-id="'+data.id+'" > <i class="fa fa-eye" aria-hidden="true"></i> Show comments </button> '
+                + '<div class="show-button"><button type="button" class="btn btn-info btn-show" data-id="'+data.id+'" > <i class="fa fa-eye" aria-hidden="true"></i> Show comments </button> </div>'
                 + '<div class="comments unique-comment-'+data.id+'"></div>'
                 + '</div>';
         }

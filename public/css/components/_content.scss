@@ -39,7 +39,7 @@ article {
             @include make-xs-column(12);
             @include make-sm-column(3);
             @include make-md-column(2);
-            padding-top: 25px;
+            padding-top: 15px;
             text-align: right;
         }
 
@@ -60,6 +60,11 @@ article {
             @include make-md-column(12);
         }
         .post-buttons {
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(12);
+        }
+        .show-button {
             @include make-xs-column(12);
             @include make-sm-column(12);
             @include make-md-column(12);

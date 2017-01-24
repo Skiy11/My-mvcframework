@@ -64,7 +64,14 @@ class NewsController extends AbstractController
     {
         $relationCommentNews = json_decode($_POST['id']);
         $comments = new Comments();
-        $allComments = $comments->where($args = array('news_id' => $relationCommentNews))->orderBy($args = array('first' => 'created_at'))->setLimit(4)->read();
+        $allComments = $comments->where($args = array('news_id' => $relationCommentNews, 'deleted' => 0))->orderBy($args = array('first' => 'created_at'))->setLimit(4)->read();
         echo json_encode($allComments);
+    }
+
+    public function deleteComments()
+    {
+        $idDeletedComments = json_decode($_POST['id']);
+        $comments = new Comments();
+        $comments->where($args = array('id' => $idDeletedComments))->update($args = array('deleted' => 1));
     }
 }
