@@ -80,7 +80,7 @@
                 + '<textarea class="form-control" rows="3" name="text-comments"></textarea>'
                 + '<button type="submit" class="btn btn-info btn-service btn-add-comment" data-id="'+data.id+'" > <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
                 + '<div class="show-button"><button type="button" class="btn btn-info btn-show" data-id="'+data.id+'" > <i class="fa fa-eye" aria-hidden="true"></i> Show comments </button> </div>'
-                + '<div class="comments unique-comment-'+data.id+'"></div>'
+                + '<div class="comments" comment-id="'+data.id+'"></div>'
                 + '</div>';
         }
     });

@@ -40,12 +40,14 @@ $(document).ready(function(){
             + '<div class="description"> <p>'+data.text+'</p> </div>'
             + '<div class="post-image"> <img src="'+data.image+'" class="img-responsive"> </div>'
             + '<div class="post-buttons"> <button type="button" class="btn btn-info btn-service"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> Like </button>'
-            + '<button type="button" class="btn btn-info btn-service btn-comment" data-id="'+data.id+'"> <i class="fa fa-comment" aria-hidden="true"></i> Comment </button> '
-            + '<button type="button" class="btn btn-info btn-service btn-delete" data-id="'+data.id+'" > <i class="fa fa-trash" aria-hidden="true"></i> Delete </button></div>'
-            + '<div class="write-comment"> <h4>Write your comment:</h4>'
-            + '<form id="write-comments-form" action="" method="post">'
+            + '<button type="button" class="btn btn-info btn-service btn-comment" data-id="'+data.id+'"> <i class="fa fa-comment" aria-hidden="true"></i> Comment </button>'
+            + '<button type="button" class="btn btn-info btn-service btn-delete" data-id="'+data.id+'" > <i class="fa fa-trash" aria-hidden="true"></i> Delete </button> </div>'
+            + '<div class="write-comment unique-form-'+data.id+'"> <h4>Write your comment:</h4>'
+            + '<form id="write-comments-form"  form-id = "'+data.id+'" action="" method="post">'
             + '<textarea class="form-control" rows="3" name="text-comments"></textarea>'
-            + '<button type="button" class="btn btn-info btn-service btn-add-comment"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
+            + '<button type="submit" class="btn btn-info btn-service btn-add-comment" data-id="'+data.id+'" > <i class="fa fa-paper-plane" aria-hidden="true"></i> Add comment </button> </form></div>'
+            + '<div class="show-button"><button type="button" class="btn btn-info btn-show" data-id="'+data.id+'" > <i class="fa fa-eye" aria-hidden="true"></i> Show comments </button> </div>'
+            + '<div class="comments" comment-id="'+data.id+'"></div>'
             + '</div>';
     }
 });
